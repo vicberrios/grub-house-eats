@@ -21,11 +21,12 @@
 
   <section class="contact">
     <h2>Contact Us</h2>
-    <form onsubmit="return validateForm()">
+    <form id="contactForm" onsubmit="return validateForm()">
       <input type="text" id="name" placeholder="Your Name" required />
       <input type="email" id="email" placeholder="Your Email" required />
       <textarea id="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+      <button type="submit" class="btn-glow">Send Message</button>
+      <p id="formSuccess" class="hidden">Thanks! Your message has been sent.</p>
     </form>
   </section>
 

@@ -7,6 +7,15 @@
        url('https://cdn.jsdelivr.net/fontsource/fonts/bebas-neue@latest/latin-400-normal.woff') format('woff');
   font-display: swap;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   margin: 0;

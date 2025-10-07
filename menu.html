@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Menu | Black & Gold Grubhouse</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -20,35 +20,37 @@
   </header>
 
   <section class="menu">
-    <h2>Our Menu</h2>
-    <div class="filter-buttons">
-      <button onclick="filterMenu('all')">All</button>
-      <button onclick="filterMenu('wings')">Wings</button>
-      <button onclick="filterMenu('burgers')">Burgers</button>
-      <button onclick="filterMenu('sides')">Sides</button>
-      <button onclick="filterMenu('drinks')">Drinks</button>
-    </div>
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="filter-buttons">
+        <button onclick="filterMenu('all')">All</button>
+        <button onclick="filterMenu('wings')">Wings</button>
+        <button onclick="filterMenu('burgers')">Burgers</button>
+        <button onclick="filterMenu('sides')">Sides</button>
+        <button onclick="filterMenu('drinks')">Drinks</button>
+      </div>
 
-    <div class="menu-items">
-      <div class="item wings" onclick="openModal('modal-wing1')">
-        <h3>Spicy Buffalo Wings</h3>
-        <p>12 pcs with ranch</p>
-      </div>
-      <div class="item wings" onclick="openModal('modal-wing2')">
-        <h3>Garlic Parmesan Wings</h3>
-        <p>12 pcs, garlic butter & herb</p>
-      </div>
-      <div class="item burgers" onclick="openModal('modal-burger1')">
-        <h3>Steel City Burger</h3>
-        <p>Beef, cheddar, onion rings, BBQ sauce</p>
-      </div>
-      <div class="item sides" onclick="openModal('modal-side1')">
-        <h3>Loaded Nachos</h3>
-        <p>Tortilla chips, cheese, jalapeños, salsa</p>
-      </div>
-      <div class="item drinks" onclick="openModal('modal-drink1')">
-        <h3>Game Day Lager</h3>
-        <p>Our signature house draft</p>
+      <div class="menu-items">
+        <div class="item wings" onclick="openModal('modal-wing1')">
+          <h3>Spicy Buffalo Wings</h3>
+          <p>12 pcs with ranch</p>
+        </div>
+        <div class="item wings" onclick="openModal('modal-wing2')">
+          <h3>Garlic Parmesan Wings</h3>
+          <p>12 pcs, garlic butter & herb</p>
+        </div>
+        <div class="item burgers" onclick="openModal('modal-burger1')">
+          <h3>Steel City Burger</h3>
+          <p>Beef, cheddar, onion rings, BBQ sauce</p>
+        </div>
+        <div class="item sides" onclick="openModal('modal-side1')">
+          <h3>Loaded Nachos</h3>
+          <p>Tortilla chips, cheese, jalapeños, salsa</p>
+        </div>
+        <div class="item drinks" onclick="openModal('modal-drink1')">
+          <h3>Game Day Lager</h3>
+          <p>Our signature house draft</p>
+        </div>
       </div>
     </div>
   </section>

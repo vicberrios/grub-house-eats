@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu | Black & Gold Grubhouse</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🏈 Black & Gold Grubhouse</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="menu">
+    <h2>Our Menu</h2>
+    <div class="filter-buttons">
+      <button onclick="filterMenu('all')">All</button>
+      <button onclick="filterMenu('wings')">Wings</button>
+      <button onclick="filterMenu('burgers')">Burgers</button>
+      <button onclick="filterMenu('drinks')">Drinks</button>
+    </div>
+
+    <div class="menu-items">
+      <div class="item wings">
+        <h3>Spicy Buffalo Wings</h3>
+        <p>12 pieces of heat with a side of ranch.</p>
+      </div>
+      <div class="item burgers">
+        <h3>Steel City Burger</h3>
+        <p>Beef, cheddar, onion rings, and BBQ sauce.</p>
+      </div>
+      <div class="item drinks">
+        <h3>Game Day Lager</h3>
+        <p>Our house draft - crisp and cold.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Black & Gold Grubhouse</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -25,24 +25,56 @@
       <button onclick="filterMenu('all')">All</button>
       <button onclick="filterMenu('wings')">Wings</button>
       <button onclick="filterMenu('burgers')">Burgers</button>
+      <button onclick="filterMenu('sides')">Sides</button>
       <button onclick="filterMenu('drinks')">Drinks</button>
     </div>
 
     <div class="menu-items">
-      <div class="item wings">
+      <div class="item wings" onclick="openModal('modal-wing1')">
         <h3>Spicy Buffalo Wings</h3>
-        <p>12 pieces of heat with a side of ranch.</p>
+        <p>12 pcs with ranch</p>
       </div>
-      <div class="item burgers">
+      <div class="item wings" onclick="openModal('modal-wing2')">
+        <h3>Garlic Parmesan Wings</h3>
+        <p>12 pcs, garlic butter & herb</p>
+      </div>
+      <div class="item burgers" onclick="openModal('modal-burger1')">
         <h3>Steel City Burger</h3>
-        <p>Beef, cheddar, onion rings, and BBQ sauce.</p>
+        <p>Beef, cheddar, onion rings, BBQ sauce</p>
       </div>
-      <div class="item drinks">
+      <div class="item sides" onclick="openModal('modal-side1')">
+        <h3>Loaded Nachos</h3>
+        <p>Tortilla chips, cheese, jalapeños, salsa</p>
+      </div>
+      <div class="item drinks" onclick="openModal('modal-drink1')">
         <h3>Game Day Lager</h3>
-        <p>Our house draft - crisp and cold.</p>
+        <p>Our signature house draft</p>
       </div>
     </div>
   </section>
+
+  <!-- Modals for items -->
+  <div id="modal-wing1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-wing1')">&times;</span>
+      <h2>Spicy Buffalo Wings</h2>
+      <img src="assets/images/buffalo-wings.jpg" alt="Spicy Buffalo Wings" />
+      <p>12 pieces of wings tossed in our hot & spicy buffalo sauce. Includes celery and ranch or blue cheese.</p>
+      <p><strong>Price: $14.99</strong></p>
+    </div>
+  </div>
+
+  <div id="modal-burger1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal-burger1')">&times;</span>
+      <h2>Steel City Burger</h2>
+      <img src="assets/images/steel-city-burger.jpg" alt="Steel City Burger" />
+      <p>Juicy beef patty, cheddar, crispy onion rings, lettuce, tomato & BBQ sauce. Served with fries.</p>
+      <p><strong>Price: $12.99</strong></p>
+    </div>
+  </div>
+
+  <!-- Add other modals similarly -->
 
   <footer>
     <p>&copy; 2025 Black & Gold Grubhouse</p>
